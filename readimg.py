@@ -49,9 +49,9 @@ y = []
 for i in xrange(len(lena)):
 	for j in xrange(len(lena[0])):
 		rgb = int(lena[i][j][0]) + lena[i][j][1] + lena[i][j][2]
-		if rgb < 255*2 and rgb > 255:
+		if rgb < 3 and rgb > 2.9:
 			x += [i]
 			y += [j]
 print len(x), len(y)
-plt.plot(y, x, 'r,')
+plt.plot(y, x, 'b,')
 plt.show()
